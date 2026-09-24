@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --bg: #f6f0e9;
+  --bg: #ece3d6;
   --ink: #1a1a1a;
   --muted: #595959;
   --line: #e4ddd4;
@@ -13,7 +13,7 @@ html { background: var(--bg); }
 body {
   margin: 0;
   background-color: var(--bg);
-  background-image: url("map.jpg?v=2");
+  background-image: url("map.jpg?v=3");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
