@@ -12,7 +12,12 @@ html { background: var(--bg); }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: url("map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--ink);
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 16px;
@@ -23,9 +28,17 @@ body {
 }
 
 .wrap {
-  max-width: 40rem;
+  max-width: 48rem;
   margin: 0;
-  padding: 4.5rem 1.75rem 5rem;
+  padding: 3.5rem 4rem 5rem;
+}
+
+@media (max-width: 1023px) {
+  .wrap { padding-left: 3rem; padding-right: 3rem; }
+}
+
+@media (max-width: 767px) {
+  .wrap { padding: 2.5rem 1.5rem 4rem; }
 }
 
 .brand {
