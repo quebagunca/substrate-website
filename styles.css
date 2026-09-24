@@ -1,9 +1,9 @@
 :root {
-  color-scheme: light;
-  --bg: #ece3d6;
-  --ink: #1a1a1a;
-  --muted: #595959;
-  --line: #e4ddd4;
+  color-scheme: dark;
+  --bg: #2a2a2a;
+  --ink: #f4f4f4;
+  --muted: rgba(255, 255, 255, 0.55);
+  --line: rgba(255, 255, 255, 0.16);
 }
 
 * { box-sizing: border-box; }
@@ -12,12 +12,7 @@ html { background: var(--bg); }
 
 body {
   margin: 0;
-  background-color: var(--bg);
-  background-image: url("map.jpg?v=3");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background: var(--bg);
   color: var(--ink);
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 16px;
@@ -27,7 +22,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
 .wrap {
+  position: relative;
+  z-index: 1;
   max-width: 48rem;
   margin: 0;
   padding: 3.5rem 4rem 5rem;
@@ -114,6 +117,12 @@ footer {
   font-weight: 200;
   letter-spacing: 0.025em;
   line-height: 18px;
+}
+
+.credit {
+  margin-top: 0.8rem;
+  font-size: 11px;
+  opacity: 0.7;
 }
 
 strong { font-weight: 500; }
