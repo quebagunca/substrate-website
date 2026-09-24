@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  --bg: #f4f1ea;
+  --ink: #1c1a17;
+  --muted: #6d675f;
+  --line: #ddd6c8;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--bg); }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.wrap {
+  max-width: 40rem;
+  margin: 0;
+  padding: 4.5rem 1.75rem 5rem;
+}
+
+.brand {
+  margin: 0 0 0.75rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.brand a { color: inherit; text-decoration: none; }
+
+.lede {
+  margin: 0 0 3rem;
+  max-width: 28rem;
+}
+
+.label {
+  margin: 2.25rem 0 0.6rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+p { margin: 0 0 0.9rem; }
+
+a { color: inherit; }
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.65rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.meta {
+  margin: 0 0 1.75rem;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+}
+
+ul {
+  margin: 0 0 0.9rem;
+  padding-left: 1.15rem;
+}
+
+li { margin: 0 0 0.4rem; }
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+}
+
+.fine { font-size: 12px; }
